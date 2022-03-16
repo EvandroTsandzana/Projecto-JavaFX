@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Principal" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_projecto_final.InicioController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="1200.0" style="-fx-background-color: #4A2B2B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="273.0" prefWidth="620.0" vgap="10.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="297.0" AnchorPane.topAnchor="278.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="btn_add" graphicTextGap="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="25.0" prefWidth="322.0" styleClass="butao" stylesheets="@../Estilo/Style.css" text="Registrar">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="25.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="PLUS_SQUARE" size="2em" wrappingWidth="21.428571701049805" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="52.0" styleClass="butao" stylesheets="@../Estilo/Style.css" text="Definições" GridPane.rowIndex="1">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="COGS" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="butao" stylesheets="@../Estilo/Style.css" text="Visualizar" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="25.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="LIST" size="2em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="butao" stylesheets="@../Estilo/Style.css" text="Ajuda" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="25.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="EXCLAMATION_CIRCLE" size="2em" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="add_pane" prefHeight="670.0" prefWidth="1220.0" style="-fx-background-color: F0F0F0;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="650.0" prefWidth="340.0" style="-fx-background-color: #4A2B2B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="btn_back" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="115.0" onAction="#handleButtonAction" opacity="0.78" prefHeight="48.0" prefWidth="52.0" styleClass="butto" stylesheets="@../Estilo/Style.css">
+                     <graphic>
+                        <FontAwesomeIcon fill="#fff6f6" glyphName="ARROW_LEFT" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="20.0" layoutX="119.0" layoutY="112.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Atleta" textFill="#fffafa">
+                     <graphic>
+                        <FontAwesomeIcon fill="#ebe1e1" glyphName="CHILD" size="2em" />
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="9.0" layoutX="119.0" layoutY="173.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Calendario" textFill="#fffafa">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="20.0" layoutX="119.0" layoutY="228.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Escalão" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SHARE_ALT" size="1.5em" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="25.0" layoutX="119.0" layoutY="286.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Ficha" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="FILE_TEXT" size="1.5em" />
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="5.0" layoutX="119.0" layoutY="344.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Modalidade" textFill="#f2f2f2">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIMPLYBUILT" size="1.5em" />
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="20.0" layoutX="119.0" layoutY="401.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Treinador" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon fill="#fffdfd" glyphName="USER_SECRET" size="1.5em" />
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton graphicTextGap="25.0" layoutX="119.0" layoutY="456.0" opacity="0.78" prefHeight="48.0" prefWidth="207.0" styleClass="butto" stylesheets="@../Estilo/Style.css" text="Usuarios" textFill="#f8f8f8">
+                     <graphic>
+                        <FontAwesomeIcon fill="#fffbfb" glyphName="USER_PLUS" size="1.5em" />
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="340.0" prefHeight="650.0" prefWidth="863.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

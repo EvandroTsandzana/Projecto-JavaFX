@@ -1,0 +1,36 @@
+.butao
+{
+-fx-background-color:#CCCCCC;
+-fx-background-radius:  15px;
+-fx-opacity: 0.9;
+}
+.butao:hover
+{
+    -fx-background-color: #A1C1F4;
+    -fx-color-text: #00000;
+    -fx-cursor: hand;
+}
+.butao:pressed
+{
+  
+   -fx-background-color: #A1C1F4;
+}
+.butto
+{
+    -fx-background-color:#381616;
+    -fx-background-radius: 10px;
+}
+.butto:pressed{
+    -fx-background-color: #271A1A;
+}
+.butto:hover
+{
+    -fx-background-color: #271A1A;
+    -fx-color-text: #00000;
+    -fx-cursor: hand;
+}
+
+/*#inserirBtn {
+    -fx-background-color: #000;
+ // -fx-background-color: #3c00ff;
+} */
